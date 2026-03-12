@@ -9,7 +9,10 @@ num2 = int(input("Ingresa el segundo número: "))
 suma = num1 + num2
 resta = num1 - num2
 multiplicacion = num1 * num2
-division = num1 / num2
+if num1 == 0 or num2 == 0:
+    print('error')
+else:
+    division = num1 / num2
 
 print(f"Suma: {suma}")
 print(f"Resta: {resta}")
